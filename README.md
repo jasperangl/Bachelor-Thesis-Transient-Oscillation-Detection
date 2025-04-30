@@ -35,6 +35,12 @@ Neural bursts are brief, context-sensitive oscillations essential to brain funct
 ├── 4.2a Cross-Model Performance Analysis.ipynb # Aggregated model evaluation
 ├── analysis_utils.py                      # Analysis utilities for hidden states & weights
 ├── data_utils.py                          # Data preprocessing, training, and helper functions
+├── 3b. LSTM Cell Analysis_ Test Data Generation.ipynb     # Generates testing data for LSTM cell analysis
+├── 3c.1 LSTM Cell Analysis_ Binary Visuals.ipynb           # Visualizes binary model hidden states and outputs
+├── 3c2. LSTM Cell Analysis_ Multi Visuals.ipynb            # Visualizes multiclass model hidden states and outputs
+├── 4.1a Cross-Model Comparisons.ipynb                      # RNN, BiLSTM, and MLP comparisons
+├── 4.1b Intra-LSTM Comparisons.ipynb                       # Comparison of LSTM variants within single architecture
+├── 4.2b LSTM Performance Analysis.ipynb                    # Detailed metric-based breakdown of LSTM performance
 ├── Colloquium New.pptx                    # Thesis presentation slides
 └── README.md
 ```
