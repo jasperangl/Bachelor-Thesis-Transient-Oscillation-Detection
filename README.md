@@ -20,7 +20,7 @@ This repository accompanies a bachelor thesis project that explores how Long Sho
 
 ## 🧠 Overview
 
-Neural bursts are brief, context-sensitive oscillations essential to brain function. Traditional detection techniques struggle under noise or lack adaptability. This project explores the use of LSTM networks—particularly their architecture, depth, and input representation—to robustly detect these bursts in a synthetic, labeled dataset.
+This thesis evaluated LSTM-based models for detecting transient neural oscillations across frequency bands and noise levels, with BiLSTMs achieving the most robust performance, though detection in the theta band remained challenging under low SNR. A comparison of input representations showed that computed features benefited simpler models, while deeper recurrent networks performed well on raw input alone. Under matched model complexity, LSTM variants consistently outperformed MLPs and threshold-based baselines. Interpretability analyses revealed that gate and state dynamics adapted to encode burst structure, suggesting the emergence of functionally specialized units within LSTM layers.
 
 ---
 
@@ -36,12 +36,13 @@ Neural bursts are brief, context-sensitive oscillations essential to brain funct
 
 ### 3. LSTM Training & Hidden State Analysis
 - `3a. LSTM Cell Analysis_ Model Generation.ipynb` — Trains various LSTM architectures while saving intermediate models for interpretability.
+- `3a2. LSTM Gate Analysis_ Model Generation and Visualization` — Trains various LSTM architectures while saving all gate and state behavior and intermediate models for epoch analysis.
 - `3b. LSTM Cell Analysis_ Test Data Generation.ipynb` — Uses trained models to generate test predictions and extract hidden/cell states over epochs.
 - `3c.1 LSTM Cell Analysis_ Binary Visuals.ipynb` — Visualizes hidden activations for binary LSTM models across top/bottom contributing cells.
 - `3c2. LSTM Cell Analysis_ Multi Visuals.ipynb` — Similar visualizations for multi-class LSTM outputs across multiple features.
 
 ### 4. Model Comparison & Performance Benchmarking
-- `4.0 LSTM Set-Up Comparison.ipynb` — Baseline comparison of simple vs deep LSTM setups using same input space.
+- `4.0 LSTM Set-Up Comparison.ipynb` — Compares simple LSTM models on different batch sizes and sequence lengths.
 - `4.1a Cross-Model Comparisons.ipynb` — Trains RNNs, BiLSTMs, MLPs, and compares them under equivalent parameter counts.
 - `4.1b Intra-LSTM Comparisons.ipynb` — Trains different LSTM and BiLSTM variants depths.
 - `4.2a Cross-Model Performance Analysis.ipynb` — Consolidates performance metrics (MCC, Accuracy, Inference Times) across all model types.
@@ -65,67 +66,6 @@ Neural bursts are brief, context-sensitive oscillations essential to brain funct
 
 ---
 
-## 🧪 Data Generation & Processing
-
-**Notebook:** `1. Simulate_bursts.ipynb`  
-Generates synthetic LFP-like signals containing bursts across theta, alpha, beta, and gamma bands. Data is balanced and labeled per time point with controlled SNR levels.
-
-### Utilities
-`data_utils.py` handles:
-- Flexible slicing based on frequency/noise/sample count
-- Reshaping and one-hot encoding
-- Persistent storage for training/testing splits
-
----
-
-## 🛠 Feature Engineering
-
-**Notebook:** `2a. Feature Extractor.ipynb`  
-Extracts two types of features:
-- **Hilbert Amplitudes** (low temporal precision, high amplitude fidelity)
-- **Morlet Wavelets** (high temporal/spectral resolution)
-
-**Notebook:** `2b. Feature Visualizations.ipynb`  
-Performs correlation analysis to assess informativeness of features versus raw signals.
-
----
-
-## 🧬 Model Training
-
-**Notebook:** `3a. LSTM Cell Analysis_ Model Generation.ipynb`  
-Trains LSTM-based models on different input types (signal, features, combinations).  
-
-Key functionalities:
-- Multi-epoch saving with custom callbacks
-- Performance tracking and model persistence
-- Simple, Deep, and BiLSTM variants
-- Binary and multi-class settings
-
----
-
-## 📈 Evaluation & Visualization
-
-**Notebook:** `4.0 LSTM Set-Up Comparison.ipynb`  
-Compares model variants by:
-- Input types
-- Model complexity (~5K parameters)
-- Binary vs. multiclass setups
-
-**Notebook:** `4.2a Cross-Model Performance Analysis.ipynb`  
-Benchmarks RNNs, BiLSTMs, and MLPs using standardized metrics (F1, Accuracy, MCC, Recall).
-
----
-
-## 🔍 Interpretability
-
-**File:** `analysis_utils.py`  
-Provides detailed visualizations and ranking:
-- Weighted LSTM hidden activations
-- Cell-level contributions over time
-- Visual differentiation of "good" vs "bad" cells
-- Epoch-wise model predictions and hidden state tracking
-
----
 
 ## 🧾 Key Findings
 
