@@ -6,15 +6,15 @@ This repository accompanies a bachelor thesis project that explores how Long Sho
 
 ## 📚 Table of Contents
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Data Generation & Processing](#data-generation--processing)
-- [Model Training](#model-training)
-- [Feature Engineering](#feature-engineering)
-- [Evaluation & Visualization](#evaluation--visualization)
-- [Interpretability](#interpretability)
-- [Key Findings](#key-findings)
+- [Overview](#-overview)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Data Generation & Processing](#-data-generation--processing)
+- [Feature Engineering](#-feature-engineering)
+- [Model Training](#-model-training)
+- [Evaluation & Visualization](#-evaluation--visualization)
+- [Interpretability](#-interpretability)
+- [Key Findings](#-key-findings)
 
 ---
 
@@ -61,9 +61,8 @@ Neural bursts are brief, context-sensitive oscillations essential to brain funct
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/lstm-burst-detection.git
+git clone https://github.com/jasperangl/Bachelor-Thesis-Transient-Oscillation-Detection.git
 cd lstm-burst-detection
-pip install -r requirements.txt
 ```
 
 ---
