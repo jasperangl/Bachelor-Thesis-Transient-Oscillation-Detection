@@ -27,14 +27,14 @@ Neural bursts are brief, context-sensitive oscillations essential to brain funct
 ## 📁 Project Structure
 
 ```
-├── 1. Simulate_bursts.ipynb               # Synthetic dataset generation
-├── 2a. Feature Extractor.ipynb            # Hilbert and wavelet feature computation
-├── 2b. Feature Visualizations.ipynb       # Correlation analysis & visualizations
-├── 3a. LSTM Cell Analysis_ Model Generation.ipynb # Model training and hidden state extraction
-├── 4.0 LSTM Set-Up Comparison.ipynb       # Architecture comparisons and benchmarking
-├── 4.2a Cross-Model Performance Analysis.ipynb # Aggregated model evaluation
-├── analysis_utils.py                      # Analysis utilities for hidden states & weights
-├── data_utils.py                          # Data preprocessing, training, and helper functions
+├── 1. Simulate_bursts.ipynb                           # Synthetic dataset generation
+├── 2a. Feature Extractor.ipynb                        # Hilbert and wavelet feature computation
+├── 2b. Feature Visualizations.ipynb                   # Correlation analysis & visualizations
+├── 3a. LSTM Cell Analysis_ Model Generation.ipynb     # Model training and hidden state extraction
+├── 4.0 LSTM Set-Up Comparison.ipynb                   # Architecture comparisons and benchmarking
+├── 4.2a Cross-Model Performance Analysis.ipynb        # Aggregated model evaluation
+├── analysis_utils.py                                  # Analysis utilities for hidden states & weights
+├── data_utils.py                                      # Data preprocessing, training, and helper functions
 ├── 3b. LSTM Cell Analysis_ Test Data Generation.ipynb     # Generates testing data for LSTM cell analysis
 ├── 3c.1 LSTM Cell Analysis_ Binary Visuals.ipynb           # Visualizes binary model hidden states and outputs
 ├── 3c2. LSTM Cell Analysis_ Multi Visuals.ipynb            # Visualizes multiclass model hidden states and outputs
