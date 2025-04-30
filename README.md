@@ -9,11 +9,6 @@ This repository accompanies a bachelor thesis project that explores how Long Sho
 - [Overview](#-overview)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
-- [Data Generation & Processing](#-data-generation--processing)
-- [Feature Engineering](#-feature-engineering)
-- [Model Training](#-model-training)
-- [Evaluation & Visualization](#-evaluation--visualization)
-- [Interpretability](#-interpretability)
 - [Key Findings](#-key-findings)
 
 ---
