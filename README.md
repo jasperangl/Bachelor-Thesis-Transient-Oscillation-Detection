@@ -8,7 +8,6 @@ This repository accompanies a bachelor thesis project that explores how Long Sho
 
 - [Overview](#-overview)
 - [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
 - [Key Findings](#-key-findings)
 
 ---
