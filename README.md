@@ -23,7 +23,6 @@ This thesis evaluated LSTM-based models for detecting transient neural oscillati
 
 ### 1. Data Simulation & Preprocessing
 - `1. Simulate_bursts.ipynb` — Generates a synthetic EEG-like dataset with bursts across frequency bands and SNR levels.
-- `data_utils.py` — Utility functions for preprocessing, feature shaping, train/test splitting, model training, and evaluation.
 
 ### 2. Feature Engineering & Visualization
 - `2a. Feature Extractor.ipynb` — Computes Hilbert and Morlet wavelet features for each sample.
@@ -43,21 +42,11 @@ This thesis evaluated LSTM-based models for detecting transient neural oscillati
 - `4.2a Cross-Model Performance Analysis.ipynb` — Consolidates performance metrics (MCC, Accuracy, Inference Times) across all model types.
 - `4.2b LSTM Performance Analysis.ipynb` — Analyzes LSTM and BiLSTM models on their performance in respect to their complexity.
 
-### 🔍 Utilities & Presentation
+### Utilities & Presentation
+- `data_utils.py` — Utility functions for preprocessing, feature shaping, train/test splitting, model training, and evaluation.
 - `analysis_utils.py` — Contains ranking, visualization, and interpretability tools for hidden states and dense layer activations.
 - `Colloquium New.pptx` — Final thesis presentation summarizing motivations, methods, results, and interpretability findings.
 - `README.md` — This documentation file.
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- TensorFlow/Keras
-- NumPy, SciPy, Matplotlib
-- Scikit-learn
 
 ---
 
